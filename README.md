@@ -1,1 +1,1 @@
-# cosc560_A1_B
+# COSC560 A1 Part B
