@@ -466,6 +466,108 @@ main.main-account .account-content .account-details .customer-details {
   margin-bottom: 20px;
 }
 
+main.main-admin {
+  padding: 50px;
+}
+main.main-admin table {
+  margin-top: 20px;
+}
+main.main-admin .single-order {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 50px;
+}
+main.main-admin .single-order .order-details .header {
+  display: flex;
+  align-items: center;
+}
+main.main-admin .single-order .order-details .header h3 {
+  margin-right: auto;
+}
+main.main-admin .single-order .order-details .header select {
+  padding: 8px;
+  border-radius: 5px;
+}
+main.main-admin .single-order .order-details .header .cancel {
+  border: 1px solid #c1272d;
+  color: #c1272d;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main.main-admin .single-order .order-details h4 {
+  color: #4d4d4d;
+  margin: 5px 0;
+}
+main.main-admin .single-order .order-details .dbe-order-statuses {
+  margin-top: 20px;
+  display: flex;
+}
+main.main-admin .single-order .order-details .dbe-order-statuses h6 {
+  display: inline-block;
+  color: white;
+  background: #007a67;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+main.main-admin .single-order .order-details .order-listing {
+  margin-top: 30px;
+}
+main.main-admin .single-order .order-details .order-listing .order-item-listing {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+main.main-admin .single-order .order-details .totals {
+  margin-top: 20px;
+  text-align: right;
+}
+main.main-admin .single-order .order-details .totals .subtotal, main.main-admin .single-order .order-details .totals .delivery, main.main-admin .single-order .order-details .totals .total {
+  display: flex;
+  justify-content: flex-end;
+}
+main.main-admin .single-order .order-details .totals .subtotal h5, main.main-admin .single-order .order-details .totals .subtotal h6, main.main-admin .single-order .order-details .totals .delivery h5, main.main-admin .single-order .order-details .totals .delivery h6, main.main-admin .single-order .order-details .totals .total h5, main.main-admin .single-order .order-details .totals .total h6 {
+  color: #4d4d4d;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+main.main-admin .single-order .customer-details h5 {
+  margin-bottom: 5px;
+}
+main.main-admin .single-order .customer-details .customer-details {
+  margin-bottom: 20px;
+}
+
+main.main-admin-stats {
+  padding: 50px;
+}
+main.main-admin-stats .header {
+  display: flex;
+  justify-content: space-between;
+}
+main.main-admin-stats form select {
+  padding: 10px;
+  border-radius: 5px;
+}
+main.main-admin-stats .statistics-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+main.main-admin-stats .statistics-container .stat {
+  padding: 10px;
+}
+main.main-admin-stats .statistics-container .stat svg {
+  border: 1px solid #aaa;
+  width: 100%;
+  margin-top: 10px;
+  height: 250px;
+}
+
 /* SHARED ELEMENTS */
 .basket {
   border: #aaa 1px solid;

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orders - DropBearEats Admin</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+          integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="header-left">
+            <a href="admin-orders.html">
+                <img class="logo logo-bug" src="img/logo-bug.svg" alt="DropBearEats Bug Logo">
+                <img class="logo logo-text" src="img/logo-admin-text.svg" alt="DropBearEats Text Logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="admin-orders.html">Orders</a>
+                <a href="admin-statistics.html">Statistics</a>
+                <a href="#">Log Out</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-admin">
+        <h3>Orders</h3>
+
+        <table class="pure-table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Time</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Restaurant</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="pure-table-odd">
+                <td><a href="admin-order.html">14596</a></td>
+                <td>5:30PM</td>
+                <td>19/07/2020</td>
+                <td>Margaret Strumph</td>
+                <td>Big B's Chicken and Burgers</td>
+                <td>Paid</td>
+                <td>Delivering</td>
+                <td>$21.20</td>
+            </tr>
+            <tr>
+                <td><a href="admin-order.html">10256</a></td>
+                <td>5:30PM</td>
+                <td>19/07/2020</td>
+                <td>Margaret Strumph</td>
+                <td>Big B's Chicken and Burgers</td>
+                <td>Unpaid</td>
+                <td>Processing</td>
+                <td>$21.20</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        Developed for COSC560 by Rachel Johnson
+    </footer>
+</div>
+</body>
+</html>

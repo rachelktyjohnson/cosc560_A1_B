@@ -329,6 +329,116 @@ main.main-account{
   }
 }
 
+main.main-admin{
+  padding:$padding-sides-tablet;
+  table{
+    margin-top:20px;
+  }
+  .single-order{
+    display:grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap:50px;
+
+    .order-details{
+      .header{
+        display:flex;
+        align-items: center;
+        h3{
+          margin-right:auto;
+        }
+        select{
+          padding:8px;
+          border-radius: $border-radius;
+        }
+        .cancel{
+          border: 1px solid $color-warning;
+          color: $color-warning;
+          margin-left:10px;
+          padding:10px;
+          border-radius: $border-radius;
+          cursor:pointer;
+        }
+      }
+      h4{
+        color: $color-neutral;
+        margin:5px 0;
+      }
+      .dbe-order-statuses{
+        margin-top:20px;
+        display:flex;
+        h6{
+          display:inline-block;
+          color:white;
+          background: $color-main;
+          padding:15px 20px;
+          border-radius: $border-radius;
+          margin-right:5px;
+          font-size:1.3rem;
+        }
+      }
+      .order-listing{
+        margin-top:30px;
+        .order-item-listing{
+          display:flex;
+          justify-content: space-between;
+          padding-bottom:10px;
+        }
+      }
+      .totals{
+        margin-top:20px;
+        text-align:right;
+        .subtotal,.delivery,.total{
+          h5,h6 {
+            color: $color-neutral;
+            margin-bottom: 5px;
+            margin-left:10px;
+          }
+          display:flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    .customer-details{
+      h5{
+        margin-bottom:5px;
+      }
+      .customer-details{
+        margin-bottom:20px;
+      }
+    }
+  }
+}
+
+main.main-admin-stats{
+  padding:$padding-sides-tablet;
+  .header{
+    display:flex;
+    justify-content: space-between;
+  }
+  form{
+    select{
+      padding:10px;
+      border-radius: $border-radius;
+    }
+  }
+  .statistics-container{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    .stat{
+      padding:10px;
+      svg{
+        border:1px solid $color-neutral-light;
+        width:100%;
+        margin-top:10px;
+        height:250px;
+      }
+    }
+  }
+}
+
 /* SHARED ELEMENTS */
 .basket{
   border: $color-neutral-light 1px solid;
