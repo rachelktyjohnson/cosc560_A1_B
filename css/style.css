@@ -65,7 +65,7 @@ body {
 }
 
 #container {
-  width: 80%;
+  width: 100%;
   max-width: 1080px;
   background-color: white;
   margin: 0 auto;
@@ -74,17 +74,39 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+@media (min-width: 768px) {
+  #container {
+    width: 80%;
+  }
+}
 #container header {
   background: #f2f2f2;
-  border-bottom: 5px solid #007a67;
+  border-bottom: 6px solid #007a67;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 50px;
+  padding: 5px 10px;
+}
+@media (min-width: 768px) {
+  #container header {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  #container header {
+    padding: 5px 50px;
+  }
 }
 #container header .header-left a {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  #container header .header-left a {
+    flex-direction: row;
+  }
 }
 #container header .header-left a .logo-bug {
   height: 65px;
@@ -97,12 +119,18 @@ body {
 #container header .header-left a:hover .logo-bug {
   transform: translateY(20px);
 }
+#container header nav {
+  display: flex;
+  flex-direction: row;
+}
 #container header nav a {
-  margin-left: 30px;
+  margin: 0 10px;
   font-weight: 800;
 }
-#container main {
-  padding: 20px 50px;
+@media (min-width: 768px) {
+  #container header nav a {
+    margin-left: 30px;
+  }
 }
 #container footer {
   margin-top: auto;
@@ -111,6 +139,90 @@ body {
   padding: 5px;
   font-size: 0.7rem;
   text-align: center;
+}
+
+/* MAIN PAGE */
+main.main-home .breakout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 5px;
+  background: #007a67;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main.main-home .breakout {
+    padding: 50px 50px;
+  }
+}
+main.main-home .breakout h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+main.main-home .breakout form {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 600px;
+}
+main.main-home .breakout form input[type=text] {
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  padding: 10px 15px;
+  text-align: left;
+  flex-grow: 5;
+}
+main.main-home .breakout form input[type=submit] {
+  width: auto;
+  flex-grow: 1;
+  padding: 10px 5px;
+  text-align: center;
+  border: 0;
+  color: #007a67;
+  font-size: 1.3rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: 800;
+}
+main.main-home .how-we-work {
+  padding: 30px 10px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main.main-home .how-we-work {
+    padding: 30px 50px;
+  }
+}
+main.main-home .how-we-work h3 {
+  margin-bottom: 10px;
+}
+main.main-home .how-we-work .sections {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  main.main-home .how-we-work .sections {
+    flex-direction: row;
+  }
+}
+main.main-home .how-we-work .sections section {
+  margin: 20px 10px;
+}
+main.main-home .how-we-work .sections section img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  main.main-home .how-we-work .sections section img {
+    height: 150px;
+    transition: 0.2s transform;
+  }
+  main.main-home .how-we-work .sections section img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+main.main-home .how-we-work .sections section h5 {
+  color: #4d4d4d;
 }
 
 /*# sourceMappingURL=style.css.map */
