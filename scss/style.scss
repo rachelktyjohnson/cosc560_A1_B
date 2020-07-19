@@ -81,8 +81,22 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5px $padding-sides;
-    .logo {
-      height: 65px;
+    .header-left{
+      a{
+        display:flex;
+        align-items: center;
+        .logo-bug{
+          height:65px;
+          transition:0.2s;
+        }
+        .logo-text{
+          height:50px;
+          margin-left:10px;
+        }
+        &:hover .logo-bug{
+          transform:translateY(20px);
+        }
+      }
     }
     nav {
       a {
