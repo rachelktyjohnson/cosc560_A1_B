@@ -1,0 +1,24 @@
+/****************** VARIABLES ******************/
+
+$bp-tablet: 768px; //cssPure medium
+$bp-desktop:1024px; //cssPure large
+
+$color-main: #007a67;
+$color-neutral: #4d4d4d;
+$color-neutral-light: #aaa;
+
+$padding-sides:50px;
+
+/****************** END VARIABLES ******************/
+
+/****************** MIXINS ******************/
+
+//breakpoint
+@mixin tablet{
+  @media(min-width:$bp-tablet){@content;}
+}
+@mixin desktop{
+  @media(min-width:$bp-desktop){@content;}
+}
+
+/****************** END MIXINS ******************/

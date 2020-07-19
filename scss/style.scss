@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import 'variables';
+
+* {
+  font-family: 'Nunito', sans-serif !important; //override PureCSS
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: $color-main;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+a {
+  color: $color-main;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.grey-border {
+  border: 1px solid $color-neutral-light;
+  border-radius: 5px;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+//container layout
+#container {
+  width: 80%;
+  max-width: 1080px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: #aaa 0 0 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  header {
+    background: #f2f2f2;
+    border-bottom: 5px solid $color-main;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px $padding-sides;
+    .logo {
+      height: 65px;
+    }
+    nav {
+      a {
+        margin-left: 30px;
+        font-weight: 800;
+      }
+    }
+  }
+
+  main {
+    padding: 20px $padding-sides;
+  }
+
+  footer {
+    margin-top: auto;
+    background: #333;
+    color: white;
+    padding: 5px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
