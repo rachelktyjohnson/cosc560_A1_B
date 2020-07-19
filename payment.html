@@ -23,7 +23,7 @@
         <div class="header-right">
             <nav>
                 <a href="account.html">My Account</a>
-                <a href="#">Log Out</a>
+                <a href="admin-orders.html">(Admin Dashboard)</a>
             </nav>
         </div>
     </header>
@@ -39,17 +39,17 @@
                     <div class="form-payment">
                         <div class="form-field">
                             <label>Payment Method</label>
-                            <select>
+                            <select name="payment-method" id="payment-method">
                                 <option disabled selected hidden>Select a payment method</option>
-                                <option>Credit Card</option>
-                                <option>Cash on Delivery</option>
+                                <option value="card">Credit Card</option>
+                                <option value="cash">Cash on Delivery</option>
                             </select>
                         </div>
                         <div class="warning">
                             <p><strong>Error:</strong> Details of error if there is one</p>
                         </div>
                         <div class="payment-cash">
-                            <h5>Info on cash payment</h5>
+                            <h5>Cash payment will be required on delivery</h5>
                         </div>
                         <div class="payment-card">
                             <div class="form-field">
@@ -89,23 +89,23 @@
                                 <p><a href="#">Edit</a> <a href="#">Remove</a></p>
                             </div>
                             <div class="item-price">
-                                <p>$6.60</p>
+                                <p>$6.50</p>
                             </div>
                         </div>
                         <div class="cart-item-listing">
                             <div class="item-contents">
-                                <h6>The Hunger Tamer</h6>
+                                <h6>Double Beef Burger</h6>
                                 <p><a href="#">Edit</a> <a href="#">Remove</a></p>
                             </div>
                             <div class="item-price">
-                                <p>$6.60</p>
+                                <p>$9.80</p>
                             </div>
                         </div>
                     </div>
                     <div class="totals">
                         <div class="subtotal">
                             <h6>Subtotal</h6>
-                            <h6>$13.20</h6>
+                            <h6>$16.30</h6>
                         </div>
                         <div class="delivery">
                             <h6>Delivery</h6>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="total">
                             <h5>Total</h5>
-                            <h5>$21.20</h5>
+                            <h5>$24.30</h5>
                         </div>
                     </div>
                 </div>
@@ -124,5 +124,6 @@
         Developed for COSC560 by Rachel Johnson
     </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
