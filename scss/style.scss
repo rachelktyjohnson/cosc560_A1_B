@@ -241,7 +241,93 @@ main.main-payment{
   }
 }
 
+main.main-status{
+  padding: $padding-sides-tablet;
+  text-align:center;
+  h6{
+    color:$color-neutral-light;
+  }
+  h1{
+    margin:20px 0;
+    font-weight:900;
+    font-size:4rem;
+  }
+  h3{
+    color:$color-neutral;
+    margin-top:30px;
+  }
+  .order{
+    border: 1px solid $color-neutral-light;
+    width:50%;
+    min-width:500px;
+    margin:0 auto;
+    border-radius: $border-radius;
+    padding:20px;
+    .order-contents{
+      margin-top:30px;
+      .row{
+        display:flex;
+        justify-content: space-between;
+        p{
+          color:$color-neutral;
+          font-size: 1rem;
+        }
+      }
+    }
+    .totals{
+      margin-top:20px;
+      .row{
+        display: flex;
+        justify-content: flex-end;
+        p{
+          color:$color-neutral;
+          font-size:1rem;
+          margin-left:5px;
+        }
+      }
+      margin-bottom:30px;
+    }
+    .order-details{
+      margin-top:10px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      text-align:left;
+    }
+  }
+}
 
+main.main-account{
+  padding:$padding-sides-tablet;
+  .past-orders-group{
+    padding-top:15px;
+  }
+  .account-content{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:50px;
+    .past-orders{
+      .past-order{
+        border:1px solid $color-neutral-light;
+        border-radius: $border-radius;
+        padding:10px 15px;
+        margin-right:40px;
+        margin-bottom:10px;
+        display:flex;
+        justify-content: space-between;
+        p{
+          color:$color-neutral;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .account-details{
+      .customer-details{
+        margin-bottom:20px;
+      }
+    }
+  }
+}
 
 /* SHARED ELEMENTS */
 .basket{
@@ -301,5 +387,23 @@ main.main-payment{
   padding:15px 10px;
   p{
     color:white;
+  }
+}
+
+.notification{
+  background:white;
+  border: $color-main 2px solid;
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  padding:20px;
+  width:300px;
+  .close{
+    position:absolute;
+    top:10px;
+    right:15px;
+  }
+  h5{
+    color:$color-neutral;
   }
 }

@@ -382,6 +382,90 @@ main.main-payment .form-payment .payment-card {
   grid-gap: 20px;
 }
 
+main.main-status {
+  padding: 50px;
+  text-align: center;
+}
+main.main-status h6 {
+  color: #aaa;
+}
+main.main-status h1 {
+  margin: 20px 0;
+  font-weight: 900;
+  font-size: 4rem;
+}
+main.main-status h3 {
+  color: #4d4d4d;
+  margin-top: 30px;
+}
+main.main-status .order {
+  border: 1px solid #aaa;
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 20px;
+}
+main.main-status .order .order-contents {
+  margin-top: 30px;
+}
+main.main-status .order .order-contents .row {
+  display: flex;
+  justify-content: space-between;
+}
+main.main-status .order .order-contents .row p {
+  color: #4d4d4d;
+  font-size: 1rem;
+}
+main.main-status .order .totals {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+main.main-status .order .totals .row {
+  display: flex;
+  justify-content: flex-end;
+}
+main.main-status .order .totals .row p {
+  color: #4d4d4d;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+main.main-status .order .order-details {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+main.main-account {
+  padding: 50px;
+}
+main.main-account .past-orders-group {
+  padding-top: 15px;
+}
+main.main-account .account-content {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;
+}
+main.main-account .account-content .past-orders .past-order {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+main.main-account .account-content .past-orders .past-order p {
+  color: #4d4d4d;
+  font-size: 1.2rem;
+}
+main.main-account .account-content .account-details .customer-details {
+  margin-bottom: 20px;
+}
+
 /* SHARED ELEMENTS */
 .basket {
   border: #aaa 1px solid;
@@ -438,6 +522,24 @@ main.main-payment .form-payment .payment-card {
 }
 .warning p {
   color: white;
+}
+
+.notification {
+  background: white;
+  border: #007a67 2px solid;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 20px;
+  width: 300px;
+}
+.notification .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.notification h5 {
+  color: #4d4d4d;
 }
 
 /*# sourceMappingURL=style.css.map */
