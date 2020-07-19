@@ -1,48 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @import 'variables', 'layout';
 
-/* MAIN PAGE */
-main.main-home{
-  .breakout{
+/* MAIN PAGES */
+
+.breakout{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px 5px;
+  @include tablet{
+    padding:50px $padding-sides-tablet;
+  }
+  background:$color-main;
+  text-align:center;
+  h3{
+    color:white;
+    margin-bottom:10px;
+  }
+  form{
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding:20px 5px;
-    @include tablet{
-      padding:50px $padding-sides-tablet;
+    flex-direction: row;
+    width:80%;
+    max-width:600px;
+    input[type="text"]{
+      border-radius: $border-radius 0 0 $border-radius;
+      border: 0;
+      padding:10px 15px;
+      text-align:left;
+      flex-grow:5;
     }
-    background:$color-main;
-    text-align:center;
-    h3{
-      color:white;
-      margin-bottom:10px;
-    }
-    form{
-      display:flex;
-      flex-direction: row;
-      width:80%;
-      max-width:600px;
-      input[type="text"]{
-        border-radius: $border-radius 0 0 $border-radius;
-        border: 0;
-        padding:10px 15px;
-        text-align:left;
-        flex-grow:5;
-      }
-      input[type="submit"]{
-        width:auto;
-        flex-grow: 1;
-        padding:10px 5px;
-        text-align:center;
-        border:0;
-        color:$color-main;
-        font-size: 1.3rem;
-        border-radius:0 $border-radius $border-radius 0;
-        cursor:pointer;
-        font-weight:800;
-      }
+    input[type="submit"]{
+      width:auto;
+      flex-grow: 1;
+      padding:10px 5px;
+      text-align:center;
+      border:0;
+      color:$color-main;
+      font-size: 1.3rem;
+      border-radius:0 $border-radius $border-radius 0;
+      cursor:pointer;
+      font-weight:800;
     }
   }
+}
+main.main-home{
+
   .how-we-work{
     padding: 30px $padding-sides-mobile;
     @include tablet{
@@ -79,5 +81,56 @@ main.main-home{
       }
     }
 
+  }
+}
+
+main.main-listing{
+  text-align:center;
+  padding: $padding-sides-mobile;
+  @include tablet{
+    padding: 20px $padding-sides-tablet;
+  }
+  h6{
+    color:$color-neutral-light;
+  }
+  a{
+    &:hover img{
+      @include tablet{
+        filter:grayscale(0%);
+      }
+    }
+  }
+  .restaurants{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+    @include tablet{
+      grid-template-columns:1fr 1fr 1fr;
+      grid-gap:30px;
+    }
+    section.restaurant{
+      padding:0;
+      border:1px $color-neutral-light solid;
+      border-radius: $border-radius;
+      img{
+        width:100%;
+        border-radius: $border-radius $border-radius 0 0;
+        @include tablet{
+          filter:grayscale(60%);
+        }
+        transition: 0.5s filter;
+      }
+      .content{
+        padding:$padding-sides-mobile;
+        h4{
+          font-weight:700;
+        }
+        p{
+          color:$color-neutral-light;
+        }
+      }
+
+    }
   }
 }

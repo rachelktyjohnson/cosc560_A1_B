@@ -76,7 +76,7 @@ body {
 }
 @media (min-width: 768px) {
   #container {
-    width: 80%;
+    width: 85%;
   }
 }
 #container header {
@@ -141,8 +141,8 @@ body {
   text-align: center;
 }
 
-/* MAIN PAGE */
-main.main-home .breakout {
+/* MAIN PAGES */
+.breakout {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,28 +151,28 @@ main.main-home .breakout {
   text-align: center;
 }
 @media (min-width: 768px) {
-  main.main-home .breakout {
+  .breakout {
     padding: 50px 50px;
   }
 }
-main.main-home .breakout h3 {
+.breakout h3 {
   color: white;
   margin-bottom: 10px;
 }
-main.main-home .breakout form {
+.breakout form {
   display: flex;
   flex-direction: row;
   width: 80%;
   max-width: 600px;
 }
-main.main-home .breakout form input[type=text] {
+.breakout form input[type=text] {
   border-radius: 5px 0 0 5px;
   border: 0;
   padding: 10px 15px;
   text-align: left;
   flex-grow: 5;
 }
-main.main-home .breakout form input[type=submit] {
+.breakout form input[type=submit] {
   width: auto;
   flex-grow: 1;
   padding: 10px 5px;
@@ -184,6 +184,7 @@ main.main-home .breakout form input[type=submit] {
   cursor: pointer;
   font-weight: 800;
 }
+
 main.main-home .how-we-work {
   padding: 30px 10px;
   text-align: center;
@@ -223,6 +224,60 @@ main.main-home .how-we-work .sections section img {
 }
 main.main-home .how-we-work .sections section h5 {
   color: #4d4d4d;
+}
+
+main.main-listing {
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  main.main-listing {
+    padding: 20px 50px;
+  }
+}
+main.main-listing h6 {
+  color: #aaa;
+}
+@media (min-width: 768px) {
+  main.main-listing a:hover img {
+    filter: grayscale(0%);
+  }
+}
+main.main-listing .restaurants {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+@media (min-width: 768px) {
+  main.main-listing .restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+main.main-listing .restaurants section.restaurant {
+  padding: 0;
+  border: 1px #aaa solid;
+  border-radius: 5px;
+}
+main.main-listing .restaurants section.restaurant img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  transition: 0.5s filter;
+}
+@media (min-width: 768px) {
+  main.main-listing .restaurants section.restaurant img {
+    filter: grayscale(60%);
+  }
+}
+main.main-listing .restaurants section.restaurant .content {
+  padding: 10px;
+}
+main.main-listing .restaurants section.restaurant .content h4 {
+  font-weight: 700;
+}
+main.main-listing .restaurants section.restaurant .content p {
+  color: #aaa;
 }
 
 /*# sourceMappingURL=style.css.map */
