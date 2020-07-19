@@ -13,4 +13,4 @@ checkoutForm.addEventListener('change',function(){
         cardInfo.style.display="block";
         cashInfo.style.display="none";
     }
-})
+});

@@ -8,6 +8,10 @@ This prototype is:
 - Includes the PureCSS framework (v2.0.3)
 - Tested in Firefox on Turing
 
+### Warnings
+- `date` input type is not fully supported but tested on Firefox on Turing
+- `let` variable declaration in JS is only available in ES6 but tested on Firefox on Turing
+
 ### User Flow
 - The customer flow starts in `index.html`.  
 - The admin flow starts in `admin-order.html`.
