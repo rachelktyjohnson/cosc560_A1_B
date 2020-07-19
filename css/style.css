@@ -314,38 +314,130 @@ main.main-single .restaurant-content .menu .menu-item {
 main.main-single .restaurant-content .menu .menu-item img {
   border-radius: 5px;
 }
-main.main-single .restaurant-content .basket {
+
+main.main-checkout,
+main.main-payment {
+  padding: 50px;
+}
+main.main-checkout h5,
+main.main-payment h5 {
+  color: #4d4d4d;
+}
+main.main-checkout .checkout-content,
+main.main-payment .checkout-content {
+  margin: 20px 0;
+}
+main.main-checkout form,
+main.main-payment form {
+  margin-right: 30px;
+  margin-top: 20px;
+}
+main.main-checkout form h4,
+main.main-payment form h4 {
+  margin-bottom: 20px;
+}
+main.main-checkout form .form-customer,
+main.main-checkout form .form-address,
+main.main-payment form .form-customer,
+main.main-payment form .form-address {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+main.main-checkout form .form-field,
+main.main-payment form .form-field {
+  display: flex;
+  flex-direction: column;
+}
+main.main-checkout form .form-field input, main.main-checkout form .form-field select,
+main.main-payment form .form-field input,
+main.main-payment form .form-field select {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+main.main-checkout form .dbe-button,
+main.main-payment form .dbe-button {
+  background-color: #007a67;
+  border: 0;
+  padding: 10px 15px;
+  color: white;
+  font-weight: 800;
+  border-radius: 5px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+main.main-payment .form-payment {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  width: 60%;
+  margin-bottom: 40px;
+}
+main.main-payment .form-payment .payment-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+/* SHARED ELEMENTS */
+.basket {
   border: #aaa 1px solid;
   text-align: center;
   border-radius: 5px;
   padding: 10px;
 }
-main.main-single .restaurant-content .basket .cart-contents {
+.basket .cart-contents {
   text-align: left;
   margin: 10px 0;
 }
-main.main-single .restaurant-content .basket .cart-contents h6 {
+.basket .cart-contents h6 {
   color: #4d4d4d;
 }
-main.main-single .restaurant-content .basket .cart-contents .cart-item-listing {
+.basket .cart-contents .cart-item-listing {
   margin: 10px 0;
   display: flex;
   justify-content: space-between;
 }
-main.main-single .restaurant-content .basket .cart-contents .cart-item-listing .item-price {
+.basket .cart-contents .cart-item-listing .item-price {
   text-align: right;
   margin-left: 10px;
 }
-main.main-single .restaurant-content .basket .cart-contents .cart-item-listing a {
+.basket .cart-contents .cart-item-listing a {
   color: #aaa;
 }
-main.main-single .restaurant-content .basket .checkout-button {
+.basket .checkout-button {
   background: #007a67;
   color: white;
   font-weight: 800;
   font-size: 1.3rem;
   padding: 10px;
   border-radius: 5px;
+}
+.basket .totals {
+  margin-top: 25px;
+}
+.basket .totals h6 {
+  color: #4d4d4d;
+}
+.basket .totals .subtotal,
+.basket .totals .delivery,
+.basket .totals .total {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.warning {
+  display: none;
+  background: #c1272d;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+.warning p {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

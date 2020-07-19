@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DropBearEats</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+          integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <img class="logo logo-bug" src="img/logo-bug.svg" alt="DropBearEats Bug Logo">
+                <img class="logo logo-text" src="img/logo-text.svg" alt="DropBearEats Text Logo">
+            </a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <a href="account.html">My Account</a>
+                <a href="#">Log Out</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-checkout">
+        <h2>Checkout</h2>
+        <h5>Ordering from Big B's Chicken and Burgers</h5>
+        <div class="checkout-content pure-g">
+            <div class="pure-u-3-4">
+                <p>Already have an account? <a href="#">Make your life easier and log in</a></p>
+                <form action="payment.html">
+                    <h4>Who is our DropBear delivering to?</h4>
+                    <div class="form-customer">
+                        <div class="form-field">
+                            <label>First Name</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Last Name</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Mobile Number</label>
+                            <input type="tel"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Email</label>
+                            <input type="email"/>
+                        </div>
+                    </div>
+                    <h4>Where is our DropBear delivering to?</h4>
+                    <div class="form-address">
+                        <div class="form-field">
+                            <label>Address Line 1</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Address Line 2</label>
+                            <input type="text"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Suburb</label>
+                            <input type="tel"/>
+                        </div>
+                        <div class="form-field">
+                            <label>Postcode</label>
+                            <input type="email"/>
+                        </div>
+                        <div class="form-field">
+                            <label>State</label>
+                            <select>
+                                <option>New South Wales</option>
+                                <option>Queensland</option>
+                                <option>Victoria</option>
+                                <option>South Australia</option>
+                                <option>Australian Capital Territory</option>
+                                <option>Western Australia</option>
+                                <option>Northern Territory</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>Placing this order will create a DropBearEats account for you using these details.</p>
+                    <input type="submit" class="dbe-button" value="Continue to Payment">
+                </form>
+            </div>
+            <div class="pure-u-1-4">
+                <div class="basket">
+                    <h4>Basket</h4>
+                    <div class="cart-contents">
+                        <div class="cart-item-listing">
+                            <div class="item-contents">
+                                <h6>The Hunger Tamer</h6>
+                                <p><a href="#">Edit</a> <a href="#">Remove</a></p>
+                            </div>
+                            <div class="item-price">
+                                <p>$6.60</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-listing">
+                            <div class="item-contents">
+                                <h6>The Hunger Tamer</h6>
+                                <p><a href="#">Edit</a> <a href="#">Remove</a></p>
+                            </div>
+                            <div class="item-price">
+                                <p>$6.60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="totals">
+                        <div class="subtotal">
+                            <h6>Subtotal</h6>
+                            <h6>$13.20</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Developed for COSC560 by Rachel Johnson
+    </footer>
+</div>
+</body>
+</html>
