@@ -43,16 +43,12 @@ h6 {
 p {
   line-height: 1.5;
   font-size: 0.9rem;
+  color: #aaa;
 }
 
 a {
   color: #007a67;
   text-decoration: none;
-  opacity: 0.9;
-  transition: 0.2s;
-}
-a:hover {
-  opacity: 1;
 }
 
 .grey-border {
@@ -92,6 +88,15 @@ body {
   #container header {
     flex-direction: row;
   }
+}
+#container header a {
+  color: #007a67;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+#container header a:hover {
+  opacity: 1;
 }
 @media (min-width: 768px) {
   #container header {
@@ -142,7 +147,7 @@ body {
 }
 
 /* MAIN PAGES */
-.breakout {
+main.main-home .breakout {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,28 +156,28 @@ body {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .breakout {
+  main.main-home .breakout {
     padding: 50px 50px;
   }
 }
-.breakout h3 {
+main.main-home .breakout h3 {
   color: white;
   margin-bottom: 10px;
 }
-.breakout form {
+main.main-home .breakout form {
   display: flex;
   flex-direction: row;
   width: 80%;
   max-width: 600px;
 }
-.breakout form input[type=text] {
+main.main-home .breakout form input[type=text] {
   border-radius: 5px 0 0 5px;
   border: 0;
   padding: 10px 15px;
   text-align: left;
   flex-grow: 5;
 }
-.breakout form input[type=submit] {
+main.main-home .breakout form input[type=submit] {
   width: auto;
   flex-grow: 1;
   padding: 10px 5px;
@@ -184,7 +189,6 @@ body {
   cursor: pointer;
   font-weight: 800;
 }
-
 main.main-home .how-we-work {
   padding: 30px 10px;
   text-align: center;
@@ -238,11 +242,6 @@ main.main-listing {
 main.main-listing h6 {
   color: #aaa;
 }
-@media (min-width: 768px) {
-  main.main-listing a:hover img {
-    filter: grayscale(0%);
-  }
-}
 main.main-listing .restaurants {
   margin-top: 20px;
   display: grid;
@@ -263,11 +262,14 @@ main.main-listing .restaurants section.restaurant {
 main.main-listing .restaurants section.restaurant img {
   width: 100%;
   border-radius: 5px 5px 0 0;
-  transition: 0.5s filter;
+  transition: 0.2s filter;
 }
 @media (min-width: 768px) {
   main.main-listing .restaurants section.restaurant img {
-    filter: grayscale(60%);
+    filter: grayscale(50%);
+  }
+  main.main-listing .restaurants section.restaurant img:hover {
+    filter: grayscale(0);
   }
 }
 main.main-listing .restaurants section.restaurant .content {
@@ -278,6 +280,72 @@ main.main-listing .restaurants section.restaurant .content h4 {
 }
 main.main-listing .restaurants section.restaurant .content p {
   color: #aaa;
+}
+
+main.main-single {
+  padding: 50px;
+  text-align: center;
+}
+main.main-single h2 {
+  margin: 10px;
+  font-weight: 800;
+}
+main.main-single .restaurant-content {
+  margin-top: 30px;
+  text-align: left;
+}
+main.main-single .restaurant-content .menu-section {
+  margin-bottom: 40px;
+}
+main.main-single .restaurant-content .menu {
+  margin-top: 10px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+main.main-single .restaurant-content .menu .menu-item {
+  border: 1px #aaa solid;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+main.main-single .restaurant-content .menu .menu-item img {
+  border-radius: 5px;
+}
+main.main-single .restaurant-content .basket {
+  border: #aaa 1px solid;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+main.main-single .restaurant-content .basket .cart-contents {
+  text-align: left;
+  margin: 10px 0;
+}
+main.main-single .restaurant-content .basket .cart-contents h6 {
+  color: #4d4d4d;
+}
+main.main-single .restaurant-content .basket .cart-contents .cart-item-listing {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main.main-single .restaurant-content .basket .cart-contents .cart-item-listing .item-price {
+  text-align: right;
+  margin-left: 10px;
+}
+main.main-single .restaurant-content .basket .cart-contents .cart-item-listing a {
+  color: #aaa;
+}
+main.main-single .restaurant-content .basket .checkout-button {
+  background: #007a67;
+  color: white;
+  font-weight: 800;
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

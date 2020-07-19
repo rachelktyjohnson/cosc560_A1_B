@@ -3,79 +3,89 @@
 
 /* MAIN PAGES */
 
-.breakout{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  padding:20px 5px;
-  @include tablet{
-    padding:50px $padding-sides-tablet;
-  }
-  background:$color-main;
-  text-align:center;
-  h3{
-    color:white;
-    margin-bottom:10px;
-  }
-  form{
-    display:flex;
-    flex-direction: row;
-    width:80%;
-    max-width:600px;
-    input[type="text"]{
-      border-radius: $border-radius 0 0 $border-radius;
-      border: 0;
-      padding:10px 15px;
-      text-align:left;
-      flex-grow:5;
-    }
-    input[type="submit"]{
-      width:auto;
-      flex-grow: 1;
-      padding:10px 5px;
-      text-align:center;
-      border:0;
-      color:$color-main;
-      font-size: 1.3rem;
-      border-radius:0 $border-radius $border-radius 0;
-      cursor:pointer;
-      font-weight:800;
-    }
-  }
-}
-main.main-home{
 
-  .how-we-work{
+main.main-home {
+  .breakout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    @include tablet {
+      padding: 50px $padding-sides-tablet;
+    }
+    background: $color-main;
+    text-align: center;
+
+    h3 {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      max-width: 600px;
+
+      input[type="text"] {
+        border-radius: $border-radius 0 0 $border-radius;
+        border: 0;
+        padding: 10px 15px;
+        text-align: left;
+        flex-grow: 5;
+      }
+
+      input[type="submit"] {
+        width: auto;
+        flex-grow: 1;
+        padding: 10px 5px;
+        text-align: center;
+        border: 0;
+        color: $color-main;
+        font-size: 1.3rem;
+        border-radius: 0 $border-radius $border-radius 0;
+        cursor: pointer;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .how-we-work {
     padding: 30px $padding-sides-mobile;
-    @include tablet{
-      padding:30px $padding-sides-tablet;
+    @include tablet {
+      padding: 30px $padding-sides-tablet;
     }
-    text-align:center;
-    h3{
-      margin-bottom:10px;
+    text-align: center;
+
+    h3 {
+      margin-bottom: 10px;
     }
-    .sections{
-      display:flex;
+
+    .sections {
+      display: flex;
       flex-direction: column;
-      @include tablet{
+      @include tablet {
         flex-direction: row;
       }
-      section{
 
-        img{
-          height:100px;
-          margin-bottom:10px;
-          @include tablet{
-            height:150px;
-            transition:0.2s transform;
-            &:hover{
-              transform:scale(1.1) rotate(5deg);
+      section {
+
+        img {
+          height: 100px;
+          margin-bottom: 10px;
+          @include tablet {
+            height: 150px;
+            transition: 0.2s transform;
+            &:hover {
+              transform: scale(1.1) rotate(5deg);
             }
           }
         }
-        margin:20px 10px;
-        h5{
-          color:$color-neutral;
+
+        margin: 20px 10px;
+
+        h5 {
+          color: $color-neutral;
         }
 
       }
@@ -84,53 +94,125 @@ main.main-home{
   }
 }
 
-main.main-listing{
-  text-align:center;
+main.main-listing {
+  text-align: center;
   padding: $padding-sides-mobile;
-  @include tablet{
+  @include tablet {
     padding: 20px $padding-sides-tablet;
   }
-  h6{
-    color:$color-neutral-light;
+
+  h6 {
+    color: $color-neutral-light;
   }
-  a{
-    &:hover img{
-      @include tablet{
-        filter:grayscale(0%);
-      }
-    }
-  }
-  .restaurants{
-    margin-top:20px;
-    display:grid;
+
+  .restaurants {
+    margin-top: 20px;
+    display: grid;
     grid-template-columns: 1fr;
-    grid-gap:10px;
-    @include tablet{
+    grid-gap: 10px;
+    @include tablet {
       grid-template-columns:1fr 1fr 1fr;
-      grid-gap:30px;
+      grid-gap: 30px;
     }
-    section.restaurant{
-      padding:0;
-      border:1px $color-neutral-light solid;
+
+    section.restaurant {
+      padding: 0;
+      border: 1px $color-neutral-light solid;
       border-radius: $border-radius;
-      img{
-        width:100%;
+
+      img {
+        width: 100%;
         border-radius: $border-radius $border-radius 0 0;
-        @include tablet{
-          filter:grayscale(60%);
+        @include tablet {
+          filter: grayscale(50%);
+          &:hover{
+            filter:grayscale(0);
+          }
         }
-        transition: 0.5s filter;
+        transition: 0.2s filter;
       }
-      .content{
-        padding:$padding-sides-mobile;
-        h4{
-          font-weight:700;
+
+      .content {
+        padding: $padding-sides-mobile;
+
+        h4 {
+          font-weight: 700;
         }
-        p{
-          color:$color-neutral-light;
+
+        p {
+          color: $color-neutral-light;
         }
       }
 
+    }
+  }
+}
+
+main.main-single{
+  padding:$padding-sides-tablet;
+  text-align:center;
+  h2{
+    margin:10px;
+    font-weight:800;
+  }
+  .restaurant-content{
+    margin-top:30px;
+    text-align:left;
+    .menu-section{
+      margin-bottom:40px;
+    }
+    .menu{
+      margin-top:10px;
+      margin-right:20px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      .menu-item{
+        border:1px $color-neutral-light solid;
+        border-radius: $border-radius;
+        padding:5px;
+        display:flex;
+        align-items:center;
+        img{
+          border-radius: $border-radius;
+        }
+      }
+    }
+
+    .basket{
+      border: $color-neutral-light 1px solid;
+      text-align:center;
+      border-radius: $border-radius;
+      padding:10px;
+
+      .cart-contents{
+        text-align:left;
+        margin:10px 0;
+        h6{
+          color:$color-neutral;
+        }
+        .cart-item-listing{
+          margin:10px 0;
+          display:flex;
+          justify-content: space-between;
+          .item-price{
+            text-align:right;
+            margin-left:10px;
+          }
+          a{
+            color:$color-neutral-light;
+          }
+        }
+      }
+
+      .checkout-button{
+        background:$color-main;
+        color:white;
+        font-weight:800;
+        font-size:1.3rem;
+        padding:10px;
+        border-radius: $border-radius;
+      }
     }
   }
 }
